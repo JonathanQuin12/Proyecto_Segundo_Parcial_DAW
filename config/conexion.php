@@ -6,12 +6,13 @@ class Conexion
 {
     public static function conectar()
     {
-        $host = "mysql.railway.internal";
+        $host = "hayabusa.proxy.rlwy.net";
+        $puerto = 40580;
         $bd = "railway";
         $usuario = "root";
         $clave = "rXpqcGApkBfbpwtJrqUqHuMyotEzDAcO";
 
-        $conn = new mysqli($host, $usuario, $clave, $bd);
+        $conn = new mysqli($host, $usuario, $clave, $bd, $puerto);
 
         if ($conn->connect_error) {
             die("Error de conexion: " . $conn->connect_error);
