@@ -6,10 +6,10 @@ class Conexion
 {
     public static function conectar()
     {
-        $host = "localhost";
-        $bd = "db_sabore_restaurante";
+        $host = "mysql.railway.internal";
+        $bd = "railway";
         $usuario = "root";
-        $clave = "";
+        $clave = "rXpqcGApkBfbpwtJrqUqHuMyotEzDAcO";
 
         $conn = new mysqli($host, $usuario, $clave, $bd);
 
